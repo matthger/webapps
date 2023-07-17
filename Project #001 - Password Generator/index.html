@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Project #001 - Password Generator
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body class="bg-primary">
+        <div class="container">
+            <div class="header">
+                <h4>Password Generator</h4>
+            </div>
+            <hr>
+            <div class="content">
+                <div class="input-group mb-5">
+                    <input type="text" class="form-control" id="password" placeholder="Generate password..." aria-describedby="copyPass">
+                    <div class="input-group-append">
+                        <span class="input-group-text h-100 rounded-right" id="copyPass">
+                            <i class="bi bi-clipboard" title="Copy password" id="copyPassIcon"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <h4>Parameters</h4>
+                <div class="row justify-content-between mt-3">
+                    <span class="col-auto">Password Length</span>
+                    <span class="col-auto" id="rangeValue">8</span>
+                </div>
+                <input type="range" class="form-range mb-3" min="1" max="24" step="1" id="passLength" value="8">
+                <form id="passwordForm">
+                    <div class="row py-3">
+                        <div class="col-6 form-check">
+                            <input class="form-check-input" type="checkbox" id="incLow" checked>
+                            <label class="form-check-label" for="incLow">Include lowercase letters (a-z)</label>
+                        </div>
+                        <div class="col-6 form-check">
+                            <input class="form-check-input" type="checkbox" id="incUp">
+                            <label class="form-check-label" for="incUp">Include uppercase letters (A-Z)</label>
+                        </div>
+                        <div class="col-6 form-check">
+                            <input class="form-check-input" type="checkbox" id="incNum">
+                            <label class="form-check-label" for="incNum">Include numbers (0-9)</label>
+                        </div>
+                        <div class="col-6 form-check">
+                            <input class="form-check-input" type="checkbox" id="incSymb">
+                            <label class="form-check-label" for="incSymb">Include symbols (@-*!)</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary rounded-pill">Generate Password</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

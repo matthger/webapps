@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.container {
+    width: 65%;
+    background-color: white;
+    margin: auto;
+    border-radius: .75rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 15px;
+}
+
+#passwordForm {
+    padding-inline: 15px;
+}
+
+.container .header h4, .container .footer h4 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.container .btn {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    min-height: 40px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+#copyPass {
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #e7e7e7;
+    height: .5rem;
+}
+
+.rounded-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
