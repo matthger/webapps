@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.container {
+    width: 60%;
+    background: white;
+    margin: auto;
+    border-radius: .75rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding-inline: 30px;
+    padding-block: 10px;
+}
+
+.container .header {
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.container .header h4 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.result {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#currencyForm {
+    margin-block: 1rem;
+}
+
+#currencyForm  label {
+    padding-bottom: .25rem;
+}
+
+#currencyForm .row {
+    padding-block: 1rem;
+}
+
+#currencyForm #valueCurrency {
+    text-align: right;
+}
+
+#switchCurrencies {
+    cursor: pointer;
+    display: inline;
+    font-size: 2rem;
+}
+
+.container .footer {
+    text-align: center;
+}
+
+.container .btn {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    min-height: 40px;
+    width: 100%;
+}
+
+#btnText {
+    text-transform: uppercase;
+}
+
+#currencyAlert {
+    margin-block: 1.5rem;
+}
+
+.load:before {
+    animation: load 1s infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
