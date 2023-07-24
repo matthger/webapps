@@ -14,7 +14,7 @@ async function generateQRCode (text) {
     const params = {
         method: 'GET',
         headers: {
-            'X-Api-Key': 'rJ8QTkX/vlOlpRudaks+EQ==ndGROmLmQ3wl1V7f',
+            'X-Api-Key': 'YOUR_API_KEY',
             'Accept': 'image/png'
         }
     }
